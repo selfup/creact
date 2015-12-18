@@ -336,3 +336,1846 @@ PG::DuplicateTable: ERROR:  relation "skills" already exists
   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "odit"], ["details", "Et dolor sapiente doloribus molestiae non aperiam nesciunt nihil repellendus impedit officiis maiores necessitatibus ad illo sed quia est voluptatem excepturi similique et repudiandae minima rerum omnis ipsa eum occaecati velit nobis quo dicta ratione vitae possimus amet repellat aut quod nulla qui voluptas consequatur aut ut modi voluptate animi quis et voluptatibus saepe sint omnis ea cupiditate beatae provident dolorum hic dolor ullam explicabo voluptatem quos nemo consectetur et quasi architecto corrupti vel distinctio facere sed ut quia ut suscipit libero vero praesentium quidem quam aut et natus laudantium magnam maxime minus qui ipsum labore eaque et cum id corporis consequuntur non."], ["level", 1], ["created_at", "2015-12-18 16:32:23.550892"], ["updated_at", "2015-12-18 16:32:23.550892"]]
   [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-12-18 09:37:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"
+  Rendered site/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 3842ms (Views: 3838.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:37:17 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:37:17 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:37:17 -0700
+
+
+Started GET "/assets/components/_main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:37:17 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:37:17 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:37:56 -0700
+Processing by SiteController#index as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+  Rendered site/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 817ms (Views: 814.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/components/_main.self-dfa2fe93b45f13e3b0b0cfa81778a52de983f354ad07b3afd501bbb3ff5a736c.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:37:57 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:39:00 -0700
+Processing by SiteController#index as HTML
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"
+  Rendered site/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 650ms (ActiveRecord: 1.6ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (3:4)
+  1 | var Main = React.createClass({
+  2 |   return (
+> 3 |     <div>
+    |     ^
+  4 |       <div>
+  5 |         <h1>Hello, Creact!</h1>
+  6 |       </div>):
+    3: <head>
+    4:   <title>Cract</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___4367204805215782991_70199168489600'
+
+
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.9ms)
+
+
+Started GET "/" for ::1 at 2015-12-18 09:39:13 -0700
+Processing by SiteController#index as HTML
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+  Rendered site/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 602ms (ActiveRecord: 1.6ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (3:4)
+  1 | var Main = React.createClass({
+  2 |   return (
+> 3 |     <div>
+    |     ^
+  4 |       <div>
+  5 |         <h1>Hello, Creact!</h1>
+  6 |       </div>):
+    3: <head>
+    4:   <title>Cract</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___4367204805215782991_70199168489600'
+
+
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.7ms)
+
+
+Started GET "/" for ::1 at 2015-12-18 09:39:41 -0700
+Processing by SiteController#index as HTML
+  [1m[35mSkill Load (0.3ms)[0m  SELECT "skills".* FROM "skills"
+  Rendered site/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 612ms (ActiveRecord: 1.5ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (13:1)
+  11 |     </div>
+  12 |   )
+> 13 | });
+     |  ^
+  14 | ):
+    3: <head>
+    4:   <title>Cract</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___4367204805215782991_70199168489600'
+
+
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.7ms)
+
+
+Started GET "/" for ::1 at 2015-12-18 09:39:51 -0700
+Processing by SiteController#index as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+  Rendered site/index.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 615ms (ActiveRecord: 1.5ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (12:0)
+  10 |       </div>
+  11 |     </div>
+> 12 | });
+     | ^
+  13 | ):
+    3: <head>
+    4:   <title>Cract</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___4367204805215782991_70199168489600'
+
+
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.6ms)
+
+
+Started GET "/" for ::1 at 2015-12-18 09:40:04 -0700
+Processing by SiteController#index as HTML
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"
+  Rendered site/index.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 603ms (ActiveRecord: 1.7ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (13:1)
+  11 |     </div>
+  12 |   )
+> 13 | });
+     |  ^
+  14 | ):
+    3: <head>
+    4:   <title>Cract</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___4367204805215782991_70199168489600'
+
+
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.8ms)
+
+
+Started GET "/" for ::1 at 2015-12-18 09:40:36 -0700
+Processing by SiteController#index as HTML
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+  Rendered site/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 895ms (Views: 891.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:40:36 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/components/_main.self-621eb33611ecc2d480264efc78b942259f31cb6143459f93aedb779c8f7b5a04.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:40:37 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:40:55 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 102ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/components/_main.self-621eb33611ecc2d480264efc78b942259f31cb6143459f93aedb779c8f7b5a04.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:40:55 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:42:15 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1490ms (Views: 1488.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/components/_header.self-8c273e6e3597923b92607ee68fb58488b914ddadad99ef7a144fb2f85b93680f.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/components/_main.self-84923e13034e8252cd566cfcf58833926602b6b5d7c2d7376adc0211fe92832b.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:42:16 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:42:17 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:42:17 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:42:17 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:42:17 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:42:17 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:44:36 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 797ms (Views: 796.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/components/_header.self-60004f9feced7afa4c89b48a2c304ee01f80dfec446ef3f8150e3ccadb2c1199.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/components/_main.self-84923e13034e8252cd566cfcf58833926602b6b5d7c2d7376adc0211fe92832b.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:44:37 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:46:30 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2485ms (Views: 2483.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/components/_all_skills.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/components/_body.self-70275f94049a2cb4aee85f9f0e5968b8e79d6ada232448db43ac7e0d02aebaf2.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/components/_main.self-138194cfc54efd5b9cd83bf7b9b0e47da043cbbd447f5e834d3bf26f57b13750.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/components/_header.self-60004f9feced7afa4c89b48a2c304ee01f80dfec446ef3f8150e3ccadb2c1199.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:46:33 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:47:33 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 603ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (10:0)
+   8 |   }
+   9 | })
+> 10 | }
+     | ^
+  11 | ):
+    3: <head>
+    4:   <title>Cract</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___4367204805215782991_70199168489600'
+
+
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/RJPB/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.1ms)
+
+
+Started GET "/" for ::1 at 2015-12-18 09:47:42 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1410ms (Views: 1409.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/components/_all_skills.self-513189a4662f079239937dc5bde52b8df8024da392bd04c5a553f88dbbb80b34.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/components/_main.self-e5cae456cdf4af59da3eb5fa73ebe8195b9d9425e07cf71507e5195d862627f2.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/components/_body.self-70275f94049a2cb4aee85f9f0e5968b8e79d6ada232448db43ac7e0d02aebaf2.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/components/_header.self-60004f9feced7afa4c89b48a2c304ee01f80dfec446ef3f8150e3ccadb2c1199.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:47:43 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:48:08 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 807ms (Views: 807.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:48:08 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:48:09 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:48:09 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:48:09 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:48:09 -0700
+
+
+Started GET "/assets/components/_all_skills.self-513189a4662f079239937dc5bde52b8df8024da392bd04c5a553f88dbbb80b34.js?body=1" for ::1 at 2015-12-18 09:48:09 -0700
+
+
+Started GET "/assets/components/_body.self-70275f94049a2cb4aee85f9f0e5968b8e79d6ada232448db43ac7e0d02aebaf2.js?body=1" for ::1 at 2015-12-18 09:48:09 -0700
+
+
+Started GET "/assets/components/_header.self-60004f9feced7afa4c89b48a2c304ee01f80dfec446ef3f8150e3ccadb2c1199.js?body=1" for ::1 at 2015-12-18 09:48:09 -0700
+
+
+Started GET "/assets/components/_main.self-e5cae456cdf4af59da3eb5fa73ebe8195b9d9425e07cf71507e5195d862627f2.js?body=1" for ::1 at 2015-12-18 09:48:09 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:48:09 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:48:09 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:48:09 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:48:17 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 857ms (Views: 856.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/components/_all_skills.self-62f91c22db82aa45c36ac9a4b50453063f3f55f54f478ded485d15490f43b025.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/components/_body.self-70275f94049a2cb4aee85f9f0e5968b8e79d6ada232448db43ac7e0d02aebaf2.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/components/_header.self-60004f9feced7afa4c89b48a2c304ee01f80dfec446ef3f8150e3ccadb2c1199.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/components/_main.self-e5cae456cdf4af59da3eb5fa73ebe8195b9d9425e07cf71507e5195d862627f2.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:48:18 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:48:25 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 826ms (Views: 824.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/components/_main.self-bbd9aa9d00a8ac2aaed1b2d55fce5c767b6c53fc3c5363e3d367af39734ece4e.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/components/_all_skills.self-62f91c22db82aa45c36ac9a4b50453063f3f55f54f478ded485d15490f43b025.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/components/_body.self-70275f94049a2cb4aee85f9f0e5968b8e79d6ada232448db43ac7e0d02aebaf2.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/components/_header.self-60004f9feced7afa4c89b48a2c304ee01f80dfec446ef3f8150e3ccadb2c1199.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:48:26 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:49:09 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 786ms (Views: 785.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/components/_all_skills.self-add69341e9bd61f696c73266bf428676a078df260ba48377f152a91c9a38c0a6.js?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:49:09 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:49:10 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:49:10 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:49:10 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:49:10 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:49:10 -0700
+
+
+Started GET "/assets/components/_body.self-70275f94049a2cb4aee85f9f0e5968b8e79d6ada232448db43ac7e0d02aebaf2.js?body=1" for ::1 at 2015-12-18 09:49:10 -0700
+
+
+Started GET "/assets/components/_header.self-60004f9feced7afa4c89b48a2c304ee01f80dfec446ef3f8150e3ccadb2c1199.js?body=1" for ::1 at 2015-12-18 09:49:10 -0700
+
+
+Started GET "/assets/components/_main.self-bbd9aa9d00a8ac2aaed1b2d55fce5c767b6c53fc3c5363e3d367af39734ece4e.js?body=1" for ::1 at 2015-12-18 09:49:10 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:49:10 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:49:10 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:49:10 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:49:17 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 818ms (Views: 818.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/components/_all_skills.self-923ba6974d72f9ceec6024aef3903cb61dc75b2460ed99f23f2c9873dcb63ae3.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/components/_body.self-70275f94049a2cb4aee85f9f0e5968b8e79d6ada232448db43ac7e0d02aebaf2.js?body=1" for ::1 at 2015-12-18 09:49:18 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:49:19 -0700
+
+
+Started GET "/assets/components/_header.self-60004f9feced7afa4c89b48a2c304ee01f80dfec446ef3f8150e3ccadb2c1199.js?body=1" for ::1 at 2015-12-18 09:49:19 -0700
+
+
+Started GET "/assets/components/_main.self-bbd9aa9d00a8ac2aaed1b2d55fce5c767b6c53fc3c5363e3d367af39734ece4e.js?body=1" for ::1 at 2015-12-18 09:49:19 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:49:19 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:49:19 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:49:19 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:49:26 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 830ms (Views: 829.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/components/_all_skills.self-3a560f82c0cda4f91dd52e32057c95b7026af5cc5c70cfe18ffbe254bdb79292.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/components/_body.self-70275f94049a2cb4aee85f9f0e5968b8e79d6ada232448db43ac7e0d02aebaf2.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/components/_header.self-60004f9feced7afa4c89b48a2c304ee01f80dfec446ef3f8150e3ccadb2c1199.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/components/_main.self-bbd9aa9d00a8ac2aaed1b2d55fce5c767b6c53fc3c5363e3d367af39734ece4e.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:49:27 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:49:46 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 822ms (Views: 821.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/components/_all_skills.self-5a0f1df95a7c0f59881ff1e6f4990394416694157f49f8ff4515523facc983ea.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/components/_body.self-70275f94049a2cb4aee85f9f0e5968b8e79d6ada232448db43ac7e0d02aebaf2.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/components/_header.self-60004f9feced7afa4c89b48a2c304ee01f80dfec446ef3f8150e3ccadb2c1199.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/components/_main.self-bbd9aa9d00a8ac2aaed1b2d55fce5c767b6c53fc3c5363e3d367af39734ece4e.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:49:47 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:50:03 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 801ms (Views: 800.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/components/_header.self-72b0903a67fbdc60b5309149e3ed1473c9dd836e0a0fddde29ea8f71d32d193e.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/components/_all_skills.self-5a0f1df95a7c0f59881ff1e6f4990394416694157f49f8ff4515523facc983ea.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/components/_body.self-70275f94049a2cb4aee85f9f0e5968b8e79d6ada232448db43ac7e0d02aebaf2.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/components/_main.self-bbd9aa9d00a8ac2aaed1b2d55fce5c767b6c53fc3c5363e3d367af39734ece4e.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:50:05 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:50:16 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 864ms (Views: 863.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/components/_body.self-477593a48b8bd9c6a4c3ef3c4213ae46f58dcfa630e1c5d006486cf36314b0ac.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/components/_all_skills.self-5a0f1df95a7c0f59881ff1e6f4990394416694157f49f8ff4515523facc983ea.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/components/_header.self-72b0903a67fbdc60b5309149e3ed1473c9dd836e0a0fddde29ea8f71d32d193e.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/components/_main.self-bbd9aa9d00a8ac2aaed1b2d55fce5c767b6c53fc3c5363e3d367af39734ece4e.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:50:17 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:50:53 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 818ms (Views: 816.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/components/_main.self-53ea7c6a5ddb3dedafd8f98d1778bf8e69058f7d3493058ee8fbbef68d326bc2.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/components/_all_skills.self-5a0f1df95a7c0f59881ff1e6f4990394416694157f49f8ff4515523facc983ea.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/components/_body.self-477593a48b8bd9c6a4c3ef3c4213ae46f58dcfa630e1c5d006486cf36314b0ac.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/components/_header.self-72b0903a67fbdc60b5309149e3ed1473c9dd836e0a0fddde29ea8f71d32d193e.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:50:54 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:52:53 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1461ms (Views: 1459.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/components/_all_skills.self-5a0f1df95a7c0f59881ff1e6f4990394416694157f49f8ff4515523facc983ea.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/components/_body.self-477593a48b8bd9c6a4c3ef3c4213ae46f58dcfa630e1c5d006486cf36314b0ac.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/components/_header.self-72b0903a67fbdc60b5309149e3ed1473c9dd836e0a0fddde29ea8f71d32d193e.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/components/_main.self-53ea7c6a5ddb3dedafd8f98d1778bf8e69058f7d3493058ee8fbbef68d326bc2.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:52:55 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:53:04 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1398ms (Views: 1396.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:53:05 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:53:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:53:05 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:53:05 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:53:05 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:53:05 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:53:05 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:53:05 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/components/_all_skills.self-5a0f1df95a7c0f59881ff1e6f4990394416694157f49f8ff4515523facc983ea.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/components/_body.self-477593a48b8bd9c6a4c3ef3c4213ae46f58dcfa630e1c5d006486cf36314b0ac.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/components/_header.self-72b0903a67fbdc60b5309149e3ed1473c9dd836e0a0fddde29ea8f71d32d193e.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/components/_main.self-53ea7c6a5ddb3dedafd8f98d1778bf8e69058f7d3493058ee8fbbef68d326bc2.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:53:06 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:53:10 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 858ms (Views: 858.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/components/_all_skills.self-5a0f1df95a7c0f59881ff1e6f4990394416694157f49f8ff4515523facc983ea.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/components/_body.self-477593a48b8bd9c6a4c3ef3c4213ae46f58dcfa630e1c5d006486cf36314b0ac.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/components/_header.self-72b0903a67fbdc60b5309149e3ed1473c9dd836e0a0fddde29ea8f71d32d193e.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/components/_main.self-53ea7c6a5ddb3dedafd8f98d1778bf8e69058f7d3493058ee8fbbef68d326bc2.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:53:11 -0700
+
+
+Started GET "/" for ::1 at 2015-12-18 09:53:21 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 833ms (Views: 832.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0391bd16e4e1ee85bf81c173ea5795a35df67026783e695c1d5a7c6bbf39bd87.css?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/components/_header.self-29e18e432973593c6ea74095613ba57253d2f4e782a09d655448182569d59528.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/components/_all_skills.self-5a0f1df95a7c0f59881ff1e6f4990394416694157f49f8ff4515523facc983ea.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/components/_body.self-477593a48b8bd9c6a4c3ef3c4213ae46f58dcfa630e1c5d006486cf36314b0ac.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/components/_main.self-53ea7c6a5ddb3dedafd8f98d1778bf8e69058f7d3493058ee8fbbef68d326bc2.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/components/_new_skill.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-18 09:53:22 -0700
