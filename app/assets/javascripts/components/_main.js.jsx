@@ -4,8 +4,6 @@ var Main = React.createClass({
       <div>
         <Header />
         <Body />
-        <NewSkill />
-        <AllSkills />
       </div>
     )
   }
