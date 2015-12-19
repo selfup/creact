@@ -3327,3 +3327,1470 @@ Started GET "/api/v1/skills.json" for ::1 at 2015-12-18 10:15:46 -0700
 Processing by Api::V1::SkillsController#index as JSON
   [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"
 Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.4ms)
+  [1m[36m (191.2ms)[0m  [1mDROP DATABASE IF EXISTS "ideabox-js_development"[0m
+  [1m[35m (192.4ms)[0m  DROP DATABASE IF EXISTS "ideabox-js_test"
+  [1m[36m (341.3ms)[0m  [1mCREATE DATABASE "ideabox-js_development" ENCODING = 'unicode'[0m
+  [1m[35m (243.5ms)[0m  CREATE DATABASE "ideabox-js_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (5.5ms)[0m  CREATE TABLE "skills" ("id" serial primary key, "name" character varying, "details" text, "level" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151201025046')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151201022111')[0m
+  [1m[35mSQL (0.2ms)[0m  CREATE EXTENSION IF NOT EXISTS "plpgsql"
+  [1m[36m (4.8ms)[0m  [1mCREATE TABLE "skills" ("id" serial primary key, "name" character varying, "details" text, "level" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151201025046')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151201022111')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "aut"], ["details", "Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui."], ["level", 0], ["created_at", "2015-12-19 22:28:21.411854"], ["updated_at", "2015-12-19 22:28:21.411854"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "quod"], ["details", "Repellat corporis rerum est facilis at consequuntur perferendis est sapiente accusantium alias in suscipit doloribus sit aut numquam officia ea sed aut harum et qui quo repellendus iste nemo quia ut omnis quidem non fuga eius occaecati deleniti quasi autem natus quam cupiditate vitae libero sint exercitationem optio amet voluptatum qui et aliquid impedit non nulla sed dolor ipsam ad voluptatem dolorum est sequi voluptas quae dolores aut maxime magnam cumque quo excepturi ut commodi expedita cum veniam et magni voluptatem minus praesentium incidunt in earum nihil ut explicabo sint rerum qui temporibus perspiciatis ducimus distinctio doloremque id non delectus vel itaque."], ["level", 2], ["created_at", "2015-12-19 22:28:21.418318"], ["updated_at", "2015-12-19 22:28:21.418318"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "quos"], ["details", "Asperiores sit est nisi natus tempore dicta commodi deleniti illo consequatur aliquid quia porro distinctio qui repudiandae dolor voluptatibus et autem velit qui pariatur est rem quo molestias beatae nihil et deserunt hic voluptatum quae similique veritatis dignissimos non quia magnam soluta ut sed expedita alias earum voluptas et doloremque et aut magni voluptate eos perspiciatis debitis dolores nemo sequi occaecati modi omnis dolore quia accusantium eius ut nesciunt qui quis perferendis ea odio omnis dolor qui sapiente eos at fuga quo rerum sunt corrupti cum unde officiis iste qui velit aut in corporis a quam dolores illum ratione voluptas reprehenderit ea voluptatem eveniet rerum."], ["level", 0], ["created_at", "2015-12-19 22:28:21.420002"], ["updated_at", "2015-12-19 22:28:21.420002"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "expedita"], ["details", "Maxime sunt est ut ea non beatae delectus id odit porro assumenda quo qui architecto aliquid autem necessitatibus labore minima cumque in voluptatibus aperiam accusantium dolore est et sit optio molestias at minus vero est sapiente veniam voluptatum perferendis dignissimos voluptatem ex quam ipsa consequatur quis est sint atque consequatur ut amet qui et velit nihil enim sunt ipsam qui exercitationem illo explicabo quisquam id quae omnis odio vel natus consequatur dolorem fugiat qui repudiandae quia soluta quasi error et et tenetur pariatur occaecati placeat voluptatem libero non aspernatur provident enim quibusdam ullam qui quas cupiditate dolorum eum totam numquam nisi asperiores."], ["level", 2], ["created_at", "2015-12-19 22:28:21.421492"], ["updated_at", "2015-12-19 22:28:21.421492"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "quasi"], ["details", "Fuga sint nesciunt aspernatur dolorem aut vel asperiores est optio iusto voluptas magnam est suscipit repellendus tempora exercitationem id neque esse sunt itaque voluptatibus quia consequatur a ut facere quis numquam ullam quos et omnis ut similique maxime earum quia dolores sapiente labore aliquid sunt eaque voluptate sint odio enim debitis molestiae at et iste et dicta nostrum delectus ut consequuntur sed eveniet quasi ut blanditiis nisi voluptatem non ipsam fugit id omnis consectetur est explicabo ducimus amet dolore distinctio voluptatum recusandae voluptas quas et voluptatem vero velit alias nam maiores ex dolor molestias quibusdam inventore ad quis sed non necessitatibus."], ["level", 0], ["created_at", "2015-12-19 22:28:21.422832"], ["updated_at", "2015-12-19 22:28:21.422832"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "eos"], ["details", "Unde rerum mollitia accusamus incidunt consequatur eum magnam commodi vel voluptas labore facere quae sed eum aut consequuntur dicta tenetur reprehenderit voluptatibus illum rerum nulla quis dignissimos sed odio ea dolores fugit non officia dolorem porro est sapiente autem distinctio molestiae ipsam exercitationem quam ut aut officiis nam saepe neque aspernatur voluptas quasi laudantium sint ea velit quia animi veniam non molestiae iusto natus dolor alias quos iure qui explicabo itaque beatae corrupti et deserunt voluptatem aliquam sunt sit voluptatem ut eaque vero hic et quas quia placeat modi veritatis nihil id ab odit deleniti atque tempora delectus assumenda ut."], ["level", 2], ["created_at", "2015-12-19 22:28:21.424364"], ["updated_at", "2015-12-19 22:28:21.424364"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "rerum"], ["details", "Quia ratione accusamus velit animi omnis voluptatem exercitationem deleniti porro sed dolores fugiat et autem iste aut ipsum suscipit et iure qui est atque at eligendi vero incidunt nisi quo voluptas pariatur dolor tenetur molestiae veniam ut non eum cumque ea eius laboriosam debitis earum enim perspiciatis sint ex mollitia soluta repellat distinctio rem itaque iusto modi qui unde reprehenderit quo error aperiam quis quis et sed non explicabo occaecati eum amet voluptatum voluptatibus neque hic magni minus quia ab nemo et quia natus ad quaerat libero quod dolore dolorem aspernatur doloribus commodi praesentium officiis sed alias aut vel harum nihil cum minima."], ["level", 0], ["created_at", "2015-12-19 22:28:21.426086"], ["updated_at", "2015-12-19 22:28:21.426086"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "in"], ["details", "Animi aut at temporibus accusantium tenetur eaque iure dolorem esse eum qui quas recusandae dolores incidunt dolores in quod vel quia praesentium enim architecto dolorem nam in sint ipsam modi corrupti rerum cupiditate eveniet fugiat excepturi enim vel et quaerat blanditiis sapiente et voluptatem consequatur voluptatibus inventore sunt cumque omnis voluptatem exercitationem iusto magni neque harum et aliquam id nihil sed consequatur quibusdam eum amet quo eligendi tempora error dolorum nisi dolor voluptas culpa officiis est maiores nostrum repellendus illum odit voluptatem quam sequi velit dolor ex aut unde vero repudiandae velit qui labore consequatur ratione aut rem earum quis est nihil minima alias reiciendis."], ["level", 0], ["created_at", "2015-12-19 22:28:21.427685"], ["updated_at", "2015-12-19 22:28:21.427685"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "est"], ["details", "Reprehenderit perspiciatis et et fugit et quia qui ex in velit error qui et accusantium ut vel fuga adipisci alias architecto voluptas rerum dignissimos est cumque ad debitis non saepe ut sed rerum aut et asperiores minus enim quas a eos et facilis itaque ab molestiae voluptas illo facere et dolore laborum quaerat qui accusamus dolorem ducimus odit veniam et tenetur incidunt quod dolor minima quo esse doloremque corrupti voluptates beatae illum commodi fugiat sit sint eaque eveniet aut quisquam occaecati sed nemo sunt est nisi vel iusto nihil excepturi blanditiis quis eum ratione dolores magni rerum modi ullam sit enim est et est sequi."], ["level", 0], ["created_at", "2015-12-19 22:28:21.429241"], ["updated_at", "2015-12-19 22:28:21.429241"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "molestias"], ["details", "Quas ipsum tenetur aut et facere alias inventore soluta sunt mollitia magni quasi quia iure vitae quaerat corrupti architecto corporis ipsam non tempore recusandae ut ab quia velit saepe sit facilis aspernatur nulla incidunt rerum tempora quis at reiciendis quia et sit dicta eveniet dolor dolorem placeat fugit porro consequatur sequi commodi laboriosam error earum distinctio animi ex sed occaecati quia necessitatibus suscipit possimus veritatis id ipsa eos quam dolorum totam maiores adipisci odit omnis et odio voluptatum perferendis ut ratione natus velit vero assumenda delectus blanditiis deleniti dolores est cumque aut culpa dignissimos nobis non aut praesentium consequatur beatae et."], ["level", 2], ["created_at", "2015-12-19 22:28:21.430658"], ["updated_at", "2015-12-19 22:28:21.430658"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "quaerat"], ["details", "Sint omnis ut eius eum error nemo quibusdam debitis quasi impedit non enim pariatur quae non dolor officia beatae quidem ipsum est voluptas sapiente est accusamus doloribus quia repellat aut ad delectus aut quia aut perspiciatis enim dignissimos voluptate molestias voluptas quisquam officiis voluptatem illo deserunt esse est consectetur facilis qui asperiores qui dolorem nihil totam dolores et quaerat corrupti distinctio perferendis unde voluptatem incidunt autem dicta consequatur reiciendis est quo tempore nisi sit corporis recusandae deleniti quis et tenetur eos placeat et quod et dolorum culpa id ea sed quia sunt sequi ab ut ut iure omnis ratione velit qui facere."], ["level", 1], ["created_at", "2015-12-19 22:28:21.432103"], ["updated_at", "2015-12-19 22:28:21.432103"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "aliquid"], ["details", "Eius dolore consequatur soluta ut velit et sed quia voluptas alias magni id quaerat commodi voluptatem dolores nostrum quo impedit quia ratione voluptatibus sed voluptatem eveniet est a similique ut dolorum vel et sunt eaque explicabo aut dolorem et in voluptates veritatis hic exercitationem ipsa consequatur iusto inventore sint at consectetur deleniti consequuntur ex autem animi numquam nisi ut in ab asperiores dicta amet atque nesciunt fugiat minima nemo doloremque porro perferendis non nihil quos est perspiciatis et eligendi accusantium tempora qui expedita est officiis quo harum illum omnis enim quas adipisci corrupti voluptas ut dolor ipsum esse nobis et velit molestiae quia laboriosam."], ["level", 0], ["created_at", "2015-12-19 22:28:21.433943"], ["updated_at", "2015-12-19 22:28:21.433943"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "pariatur"], ["details", "Dolorem et amet dolor omnis nihil doloremque ut reiciendis non odio ratione dolorem dignissimos doloribus impedit voluptatibus aut expedita repellat enim sit vel voluptatem explicabo sit voluptas excepturi pariatur error magnam cupiditate atque quisquam quaerat similique voluptate deleniti ea quidem qui dolores est consequatur animi esse sit commodi eaque aut dolores dolore modi velit repudiandae quo iste quam in dolor et eius eveniet ut nostrum totam alias nesciunt aut harum officiis consequatur fugiat ipsam quia et corporis earum voluptates voluptatem qui molestiae autem repellendus qui ut at quasi illo quia quis sapiente quas et magni omnis accusamus accusantium laudantium voluptatum in tenetur."], ["level", 1], ["created_at", "2015-12-19 22:28:21.435442"], ["updated_at", "2015-12-19 22:28:21.435442"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "a"], ["details", "Nihil itaque exercitationem dolor quasi facilis consequatur omnis amet eum magnam consequatur officia aut ratione quo incidunt voluptas est ea veritatis quis ipsum pariatur similique et perferendis sed explicabo hic sint voluptas et natus qui enim labore unde architecto ut in et eos dolores praesentium libero debitis aut quibusdam cupiditate dolorum modi at nisi rerum rem consequatur sit voluptate rerum mollitia voluptatem quidem culpa molestiae non molestiae sint laborum est voluptatibus magni ab nihil ut ex dignissimos quam qui ea iure iusto est accusamus et repellendus rerum ullam aut aut voluptatem possimus reprehenderit quisquam quia saepe laboriosam odio veniam corporis perspiciatis necessitatibus fugit."], ["level", 2], ["created_at", "2015-12-19 22:28:21.437029"], ["updated_at", "2015-12-19 22:28:21.437029"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "dolorem"], ["details", "Ratione veritatis dolor accusantium qui deleniti suscipit quae fugiat in dolores voluptatibus doloremque ut earum sequi labore et illum odit voluptas itaque eveniet enim nihil ut sit et blanditiis et dolorum vitae dolorem omnis voluptatem libero est velit praesentium reprehenderit quia totam impedit molestiae est aut eligendi veniam atque fuga rerum qui similique quam voluptatem doloribus nemo et ex ea quod deserunt id non quia quis magni voluptas minima aliquam officiis nam sunt illo asperiores sed temporibus animi a consequatur aspernatur autem tempore dolore eum eos nostrum nihil voluptatum recusandae omnis ut at culpa architecto quas sed aut consectetur sit sed saepe debitis rerum."], ["level", 2], ["created_at", "2015-12-19 22:28:21.438742"], ["updated_at", "2015-12-19 22:28:21.438742"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "quo"], ["details", "In voluptas sit magnam sint dolores ad sit ipsa quia veritatis voluptatem rerum unde est nostrum libero expedita aut temporibus quia ut suscipit reprehenderit quo tempore provident et quibusdam voluptatem non optio nesciunt eius odit impedit beatae nulla et molestiae qui eveniet explicabo ut quam rerum eos nemo iusto id quidem culpa ratione accusamus odio deleniti eligendi et est recusandae doloribus quos adipisci eum sit vel eos ea iste qui facere iure totam aspernatur debitis repellendus corporis blanditiis a placeat necessitatibus et cum dolor in esse inventore facilis tempora nisi non ut voluptatum maiores consectetur ea nobis autem error cumque porro ut sapiente."], ["level", 0], ["created_at", "2015-12-19 22:28:21.440292"], ["updated_at", "2015-12-19 22:28:21.440292"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "deleniti"], ["details", "Eligendi doloribus mollitia hic maiores fuga assumenda aspernatur velit nesciunt et et molestiae id ex est adipisci consectetur ut ratione et odio voluptas suscipit commodi recusandae totam voluptatem labore perspiciatis corporis non qui asperiores iusto maxime dolor explicabo et facilis incidunt a earum quia magni voluptatem illo quis quisquam consequatur dignissimos quibusdam unde optio architecto error alias rerum voluptatem qui nostrum ullam sit aperiam omnis autem vero aut nobis deleniti aut tempora aliquid ut in enim tenetur minima quia tempore quis non officiis odit ipsa doloremque natus eos ab ea quos eius inventore sed qui eum impedit qui qui amet aut."], ["level", 2], ["created_at", "2015-12-19 22:28:21.441805"], ["updated_at", "2015-12-19 22:28:21.441805"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ipsam"], ["details", "Inventore alias voluptates eius provident sint aspernatur vel qui ipsum animi quo atque consequatur quam sed maiores ut sed similique nesciunt quo iure laborum aut ut at laboriosam qui sit delectus voluptas non harum necessitatibus earum odio quaerat accusantium assumenda quos et ut vitae perspiciatis ab temporibus consectetur deleniti non ut repudiandae voluptatem cumque esse recusandae vel id neque expedita rerum adipisci et distinctio exercitationem placeat reiciendis qui et commodi voluptatibus enim optio et praesentium rerum aut dolorem est est qui sunt libero cupiditate eos odit porro doloribus voluptas sapiente sed natus et nobis voluptatem magni amet dolore pariatur minus."], ["level", 2], ["created_at", "2015-12-19 22:28:21.443121"], ["updated_at", "2015-12-19 22:28:21.443121"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ipsam"], ["details", "Voluptas vero corrupti animi accusamus et optio quae rerum qui consequatur natus commodi corporis delectus est explicabo dolorem incidunt vel tempore eveniet quia voluptatum adipisci ab ut quia fugiat dolor pariatur nesciunt eius quam eaque unde non et illum nostrum distinctio et similique est sit non neque expedita cupiditate nihil sunt iusto qui omnis voluptas ipsum eos laudantium accusantium sapiente provident alias labore placeat assumenda saepe harum sint atque ex illo deleniti eum qui sit et a quaerat cum consequatur amet aut dolores sed fuga molestiae eum sint aut molestias rerum qui dignissimos minima officia perferendis aspernatur quibusdam nisi et et voluptatem minus maxime asperiores."], ["level", 1], ["created_at", "2015-12-19 22:28:21.444719"], ["updated_at", "2015-12-19 22:28:21.444719"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "et"], ["details", "Et corporis numquam aut eius et sint aut officiis sed in recusandae aut consequatur est voluptatem enim non voluptatem modi ut architecto et sint sunt repudiandae inventore perferendis velit quod autem et est voluptatibus ullam omnis suscipit iste impedit asperiores ab a quae earum eligendi facilis alias minus voluptatem eos dolor nihil molestias optio et quam deleniti temporibus magni dolor voluptates qui ducimus sapiente perspiciatis et et qui accusamus veniam esse iure harum autem vel rerum natus ipsa quas labore ex nihil dolores eaque cumque consequuntur sit atque molestiae fugiat fugit tempora dignissimos quis ut voluptas praesentium quia consequatur eos delectus."], ["level", 0], ["created_at", "2015-12-19 22:28:21.446028"], ["updated_at", "2015-12-19 22:28:21.446028"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "eos"], ["details", "Eaque quisquam mollitia quia minima earum vel est ut esse iure assumenda enim iste ab quas illum et quae aut vitae libero rem occaecati repudiandae quod neque quia vero commodi quia iusto voluptas sapiente eligendi nisi molestiae odio sit eos provident rerum corporis consequatur placeat dolor incidunt voluptates similique modi voluptate accusamus sit quia inventore molestias suscipit cumque excepturi expedita aperiam enim dolorem eum dolores eius recusandae nesciunt velit in consectetur id quos non corrupti rerum asperiores aut sed praesentium dicta veritatis ut eum distinctio repellat quo quibusdam delectus amet maxime quaerat perspiciatis aut dolore blanditiis minus exercitationem reiciendis consequatur."], ["level", 2], ["created_at", "2015-12-19 22:28:21.447341"], ["updated_at", "2015-12-19 22:28:21.447341"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "officia"], ["details", "Reiciendis tempora laboriosam quia aut quam et quibusdam qui debitis sint omnis quidem saepe incidunt et cumque nihil nostrum officiis quisquam veniam blanditiis sapiente repudiandae ea molestiae amet molestias ut sit nulla distinctio assumenda deleniti aut maxime dolore voluptas excepturi minima adipisci ut labore quia sit consequatur ut aspernatur ut aliquam magni quos aut veritatis dolorem enim qui in quasi eos consectetur rem illum explicabo vero quod ad vitae similique occaecati suscipit sunt velit libero in quas est dolores mollitia earum eius aut pariatur a sed ut deserunt culpa quia atque placeat qui impedit dolor iste nam et ab sunt ut."], ["level", 1], ["created_at", "2015-12-19 22:28:21.448679"], ["updated_at", "2015-12-19 22:28:21.448679"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "sapiente"], ["details", "Exercitationem laudantium eum quae enim at et nam illo molestias incidunt dolor error id quia expedita qui voluptatem doloribus voluptatibus est dicta architecto eos voluptate minus iure et non maiores quam sunt aut eum distinctio non reiciendis asperiores totam id repellendus provident esse consequatur facilis sit sit harum cupiditate quo officiis aliquam perspiciatis qui explicabo animi eos ea dolorum corporis dignissimos illum debitis est occaecati earum necessitatibus et neque molestiae excepturi modi sed recusandae velit dolorem suscipit omnis sunt ut quia voluptates iusto quisquam repudiandae a odio est eius beatae mollitia culpa qui optio in omnis aliquid voluptas delectus nisi blanditiis."], ["level", 2], ["created_at", "2015-12-19 22:28:21.449981"], ["updated_at", "2015-12-19 22:28:21.449981"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "molestiae"], ["details", "Consequatur id eos iste a officiis minus et ut eum ab ea sed sit aliquid voluptatem sed quia odio et officia vitae rerum consequatur esse tempora id maxime est magnam earum aut commodi neque veritatis assumenda ipsa velit eius et aut illum error minima soluta optio vel sit unde eligendi voluptatibus dolore fuga vel omnis magni atque totam exercitationem accusamus nisi recusandae omnis asperiores ad et ea nobis qui praesentium non delectus dignissimos perspiciatis aut dicta ex molestiae eum suscipit distinctio iusto sint occaecati et aperiam deserunt libero tempore fugit sapiente rem ut sint et est autem labore ut animi aut dolorum ipsum facilis beatae."], ["level", 0], ["created_at", "2015-12-19 22:28:21.451286"], ["updated_at", "2015-12-19 22:28:21.451286"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ad"], ["details", "Et sunt quis numquam ea velit maiores est odio modi veritatis fugiat ratione delectus voluptate tempore blanditiis et ab rerum distinctio id eveniet voluptatem qui autem et molestias enim corporis quasi nihil ut explicabo repellendus voluptatum sunt unde laborum praesentium dolorem nobis ipsam itaque necessitatibus voluptates molestiae voluptatem ea dolorem asperiores tenetur quia qui qui et voluptas impedit deserunt expedita reprehenderit aut ipsum nesciunt vel sed perspiciatis et et et incidunt inventore ut quia illo velit aut aut qui nemo vitae vero facere neque libero ut ut quo non sint et pariatur dolor vel cumque quidem magnam at quos sint."], ["level", 2], ["created_at", "2015-12-19 22:28:21.452785"], ["updated_at", "2015-12-19 22:28:21.452785"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "deleniti"], ["details", "Asperiores consequatur ut et modi nesciunt provident aut magni et autem nisi sed delectus ea quia sequi dolor dignissimos consequatur exercitationem recusandae facilis expedita aspernatur non animi incidunt at fugit vero rerum officia ut distinctio dolore est voluptas minima unde nihil nemo earum aut sit ut nihil labore possimus est molestias amet corrupti voluptatem beatae in sed ut voluptatem velit et sapiente placeat quod quae dolorem sit et dolores nobis voluptas ipsam id tempora quaerat quasi ut cumque cupiditate libero quis esse quo quam qui porro maxime nulla eos eligendi iste quos eos aut quia omnis et dolorem omnis veritatis nostrum est et aliquid."], ["level", 2], ["created_at", "2015-12-19 22:28:21.454345"], ["updated_at", "2015-12-19 22:28:21.454345"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "nulla"], ["details", "Illo hic tenetur vel inventore et laborum voluptatem velit dolores tempore rerum accusantium minima dolor labore quia ut minus ut et beatae harum nam nostrum consequatur veritatis laboriosam unde et ratione quis quod eligendi mollitia odio voluptatibus ipsum iure sed qui perspiciatis vero consequuntur qui nihil assumenda dicta omnis amet neque reprehenderit alias consectetur sint nesciunt omnis quam cupiditate ea id numquam fugit dignissimos quo itaque perferendis ducimus voluptatem et eum quisquam occaecati id quibusdam placeat molestias enim debitis quidem illum molestiae et eveniet dolore architecto in eaque sunt aliquam blanditiis esse natus et aut veniam magnam aut aut suscipit autem non fugiat distinctio ut."], ["level", 2], ["created_at", "2015-12-19 22:28:21.456271"], ["updated_at", "2015-12-19 22:28:21.456271"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "quia"], ["details", "Reprehenderit voluptates provident voluptatem unde incidunt ut velit dolores amet debitis molestiae consequatur beatae aut ex nesciunt quas totam alias expedita facere earum libero est voluptatem consequatur qui omnis et molestias consequatur eaque iste tempore enim ullam quia quis commodi omnis fugit veritatis possimus rerum laudantium ut et sint et in et repellendus natus excepturi sint repudiandae ut at voluptas vel aliquam neque impedit explicabo aut et quia autem non soluta quia voluptatum inventore eos et asperiores quae consequuntur est iure rerum hic labore eum nihil nam officiis dignissimos minima est aut quos minus deserunt architecto nisi atque maiores dolor sunt ut."], ["level", 1], ["created_at", "2015-12-19 22:28:21.457975"], ["updated_at", "2015-12-19 22:28:21.457975"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "recusandae"], ["details", "Cumque voluptatum a ut aut corporis molestiae aspernatur dolorum quis eveniet adipisci voluptates ut nihil dolor recusandae ea explicabo sit doloremque ea voluptatem officiis qui veritatis earum modi consectetur in vel molestiae quam ex cupiditate autem laudantium est esse enim cum velit quod facere iure assumenda eaque nam neque in est ducimus reprehenderit excepturi quos tempora quo dicta possimus ut exercitationem enim distinctio amet nemo quidem sed fugiat voluptas culpa nesciunt eligendi nostrum ut consequuntur voluptatibus perferendis occaecati minus quia illum impedit et alias quasi et perspiciatis est dolores et quae maiores ipsa omnis reiciendis et iusto inventore totam sint et quia."], ["level", 2], ["created_at", "2015-12-19 22:28:21.459652"], ["updated_at", "2015-12-19 22:28:21.459652"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "illum"], ["details", "Voluptatibus maiores debitis et asperiores similique iure id quidem laudantium consectetur repudiandae maxime magnam nisi dolor iste ut exercitationem et nihil harum reprehenderit quae omnis facere amet qui illo ab rem eveniet molestiae odit doloribus ut sunt et impedit corporis voluptas fuga sed voluptatum eaque aspernatur eum qui dolores est omnis libero officiis assumenda distinctio velit deleniti sit quis consequatur quisquam itaque consequuntur dolorem eos dolore quia in minima expedita non deserunt voluptates voluptas enim suscipit hic animi autem reiciendis accusantium qui quo architecto voluptatem nostrum recusandae saepe voluptate temporibus ipsum voluptatem necessitatibus aut iusto sed porro et totam vel ad non tenetur earum atque."], ["level", 2], ["created_at", "2015-12-19 22:28:21.461538"], ["updated_at", "2015-12-19 22:28:21.461538"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "maxime"], ["details", "Eius dolore quos quia inventore assumenda sed impedit est laboriosam quod perferendis et fuga repellat qui voluptatum itaque doloribus et optio suscipit architecto unde ex voluptatem qui quidem incidunt quis sed necessitatibus et molestias deserunt eos debitis animi quia rerum laborum rerum voluptates sit illum ut minus officiis sed sapiente omnis velit ducimus provident similique aspernatur exercitationem natus soluta culpa earum quo ea voluptatem voluptatibus officia omnis ut fugiat ullam perspiciatis amet cupiditate ipsum voluptas magnam vel aut et consectetur corrupti ipsa temporibus qui recusandae in reprehenderit sequi blanditiis ea repellendus mollitia et totam est eum ab nobis dignissimos saepe corporis pariatur modi non quas."], ["level", 0], ["created_at", "2015-12-19 22:28:21.462820"], ["updated_at", "2015-12-19 22:28:21.462820"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "molestias"], ["details", "Sapiente aut rerum qui ut omnis sed minus unde voluptatum et eveniet aperiam ipsa consequuntur sed ut eos voluptates repellat ut blanditiis laboriosam voluptas optio sit doloremque magni temporibus sint vero alias magnam aut veritatis a quis aut ut cumque et facere ut beatae aut et omnis rerum voluptate libero dolorum quia incidunt in velit provident expedita veniam rem inventore fugit vel itaque odio mollitia consectetur est eos iusto commodi non excepturi ipsam vel quam autem recusandae amet quos dolorem quidem fugiat distinctio pariatur voluptas ea reprehenderit tempore vitae dolore accusamus illo sint id debitis ratione deleniti accusantium est et ipsum deserunt omnis praesentium."], ["level", 0], ["created_at", "2015-12-19 22:28:21.464119"], ["updated_at", "2015-12-19 22:28:21.464119"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ducimus"], ["details", "Nobis voluptatem delectus commodi odio ipsum ex enim aperiam numquam atque deleniti est consectetur quia fugiat vel ut dolores reprehenderit quo cupiditate libero fuga ut laboriosam rerum iusto qui ut sunt tempora voluptatem officiis quisquam modi consequatur debitis consequatur aut quasi repellat laudantium optio qui aut eaque odit quia assumenda doloremque qui non autem aspernatur voluptate et hic inventore ab accusantium natus dolor quis saepe eum recusandae ducimus sit qui cum nesciunt quam et non ut in asperiores sit sed voluptas necessitatibus tempore nulla eius ea et in laborum et dolorem quaerat facilis blanditiis provident eos aliquid velit et omnis."], ["level", 1], ["created_at", "2015-12-19 22:28:21.465444"], ["updated_at", "2015-12-19 22:28:21.465444"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "commodi"], ["details", "Rerum voluptatem minima eos similique quis expedita saepe explicabo dolor quidem et non possimus modi et necessitatibus maxime in veniam est vel soluta ab nihil odit aut illo sit tempore cumque tenetur praesentium natus laudantium quo aperiam corrupti alias sint quos quasi deleniti non in doloribus id ea quia est omnis voluptas doloremque pariatur officia molestiae ducimus eum et accusantium reiciendis itaque cum voluptas impedit quae porro excepturi voluptatem omnis est consequatur vel harum eius sunt illum totam adipisci voluptatibus qui autem esse assumenda consectetur distinctio nostrum laboriosam eos nobis nisi corporis sapiente recusandae animi quis non ut voluptas temporibus ullam repellat eligendi quo aut."], ["level", 0], ["created_at", "2015-12-19 22:28:21.466881"], ["updated_at", "2015-12-19 22:28:21.466881"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ea"], ["details", "Laudantium est aut et quaerat qui consequatur ducimus unde quasi maiores quis aspernatur qui molestias dolorum non sed explicabo facere ut voluptas nihil sunt quis ullam deleniti nostrum est dolor magnam cumque inventore quibusdam doloremque quam expedita consequatur molestiae dolores quo sapiente ea laborum animi id fugiat qui rem vel qui eaque porro enim ratione tenetur dolores et distinctio atque sequi exercitationem et debitis aut in reiciendis iusto ex voluptate ipsum commodi numquam excepturi placeat architecto enim omnis molestiae laboriosam itaque et sit aut neque a praesentium hic at velit autem esse omnis dolorem similique eum deserunt et cum eos impedit qui quisquam."], ["level", 1], ["created_at", "2015-12-19 22:28:21.468243"], ["updated_at", "2015-12-19 22:28:21.468243"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "laudantium"], ["details", "Sequi dolor nemo quam dolorum fugiat et harum qui error adipisci ea voluptas beatae nihil praesentium numquam laudantium sed quia ut esse placeat asperiores vel est quaerat sint quo vel fuga facilis voluptate voluptatem a deleniti accusantium minus tempora officiis natus dicta aut dolore maiores aut illo quisquam neque in quidem eos exercitationem quibusdam omnis molestiae aspernatur iste recusandae voluptas deserunt eum reiciendis blanditiis eius consequatur necessitatibus cum sit eaque nobis molestiae suscipit modi quos culpa mollitia optio facere libero magni animi in ipsum porro consequatur magnam voluptatibus ratione corrupti incidunt amet nisi voluptatem veniam quis et est ipsa nihil et autem omnis unde."], ["level", 1], ["created_at", "2015-12-19 22:28:21.469641"], ["updated_at", "2015-12-19 22:28:21.469641"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "doloremque"], ["details", "Rerum tenetur occaecati non velit veritatis voluptatem quos et modi et ut qui quisquam maxime voluptas voluptatem assumenda et est doloribus dicta in nihil autem libero blanditiis quia quidem aspernatur culpa aut est dolore soluta aut quasi officiis laboriosam expedita facere ipsum exercitationem eum vitae reiciendis perspiciatis praesentium accusantium vel repellendus sint ut enim aliquam sunt commodi ratione quaerat pariatur vero iste voluptatum quam ex atque et eaque omnis dolorem quod eum est tempora hic fugiat qui corporis quia dolor ut id natus doloremque voluptas cumque voluptatem rem asperiores vel recusandae dignissimos quia consectetur nobis aut saepe qui minima consequuntur est et quibusdam."], ["level", 1], ["created_at", "2015-12-19 22:28:21.470966"], ["updated_at", "2015-12-19 22:28:21.470966"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "dolorem"], ["details", "Animi cupiditate beatae molestiae perferendis voluptas officia quia ut et quae vel assumenda et magni esse eligendi corporis soluta fuga nihil quasi accusamus tempore nemo ad excepturi iure harum magnam est est labore repudiandae sapiente inventore nam sit et dolorum accusantium ut natus enim ipsa et laudantium est nesciunt non autem aliquid totam quam mollitia eius velit vel vero eaque fugiat voluptatem qui eum molestias itaque eos voluptatem aut tempora eveniet dolorem consectetur quibusdam distinctio dolores quo fugit ut quidem sed numquam deserunt rerum veritatis sunt ratione voluptates dignissimos sit ullam commodi ut blanditiis sequi voluptas doloribus aut vitae facere aut rem."], ["level", 1], ["created_at", "2015-12-19 22:28:21.472353"], ["updated_at", "2015-12-19 22:28:21.472353"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "repudiandae"], ["details", "Explicabo quia ducimus consequatur expedita dolorum nisi vel cumque ipsa eligendi doloribus vel voluptatem quibusdam rerum dolore asperiores neque itaque minus harum aut et corrupti sequi ut suscipit magnam unde molestias sed qui veniam veritatis perspiciatis fugiat voluptates incidunt omnis sunt hic voluptatibus voluptatem et et saepe aut in et nemo architecto a et et sapiente blanditiis inventore iusto ipsum dolorem numquam nihil et deleniti qui animi beatae alias cum deserunt est eveniet iste aut officia rerum tempora non mollitia temporibus labore voluptatem recusandae similique facilis aliquam laboriosam enim quia qui sint aut debitis ea necessitatibus dignissimos vero non aspernatur."], ["level", 1], ["created_at", "2015-12-19 22:28:21.473686"], ["updated_at", "2015-12-19 22:28:21.473686"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "voluptatem"], ["details", "Corporis cumque rem dolorem deserunt et repellat omnis voluptas sit eos autem at nostrum odit qui ut ex unde fugit voluptatibus assumenda qui nesciunt voluptatem tempore earum et est deleniti praesentium quia quasi reiciendis nihil et asperiores non laudantium rerum quis sit expedita tempora voluptatum architecto sunt et dolor quam nobis quia velit cum repellendus voluptatem est labore voluptas eveniet officiis qui numquam delectus molestiae neque quod ut nisi culpa vero maxime rerum provident omnis placeat molestias ut quo aut laboriosam consequatur beatae dignissimos voluptatem possimus illum nam et occaecati repudiandae error autem aspernatur reprehenderit vel sint blanditiis dolore enim modi aut aut."], ["level", 2], ["created_at", "2015-12-19 22:28:21.475077"], ["updated_at", "2015-12-19 22:28:21.475077"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "praesentium"], ["details", "Laudantium magni et omnis at tenetur minus ipsum dolore accusantium beatae asperiores rerum quisquam iure omnis aut corrupti quo et dolores totam consectetur quas culpa ad qui debitis exercitationem ducimus unde sit sint illum est nostrum blanditiis in nihil velit eos quasi illo et non inventore nihil adipisci laboriosam fugit dolores magnam praesentium cumque in neque dolor sed alias eveniet voluptatem omnis non nemo ex ab aut expedita distinctio ratione quaerat qui tempora odio esse deleniti soluta cupiditate doloremque pariatur voluptas ut explicabo officiis et ea reprehenderit sit qui saepe perferendis aliquam ullam sint aut et dolorum itaque aliquid ut."], ["level", 0], ["created_at", "2015-12-19 22:28:21.476359"], ["updated_at", "2015-12-19 22:28:21.476359"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "quis"], ["details", "Consequuntur error porro suscipit delectus est explicabo quia ipsam quia fuga atque omnis architecto aut est vero vel inventore aut sunt et aspernatur eum sint possimus corrupti totam voluptatem nostrum qui ea aperiam et eligendi laudantium quasi amet ut maxime exercitationem ut facilis nisi sapiente consequatur dolorum aliquam minus ex nihil doloremque cupiditate numquam aut ut molestias ut odit tempora qui dolores modi qui commodi recusandae ipsa temporibus qui laboriosam voluptatem eveniet voluptate voluptas et officia aliquid omnis ut nam ad sed eaque fugit quaerat tempore odio quia officiis id rerum quas nesciunt nemo quod et reiciendis repellat non veniam quo."], ["level", 1], ["created_at", "2015-12-19 22:28:21.477745"], ["updated_at", "2015-12-19 22:28:21.477745"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ullam"], ["details", "Officiis aut quisquam est qui consequatur suscipit eum ipsa et aut pariatur est odio quod iure voluptatem rerum quo modi ab commodi eaque quia numquam qui vitae sit magni sed et qui magnam mollitia quasi hic minus tenetur debitis est repellendus repellat sit ad similique ut sunt provident nesciunt dicta ullam nisi et non in dolor saepe odit dolor dignissimos facere voluptatibus velit sint molestiae nam exercitationem asperiores et veniam perspiciatis voluptatum eligendi voluptate dolorem rerum autem non iusto et consequatur quaerat enim quo rerum quis ut et quam maxime minima expedita sequi aliquid enim porro ut explicabo fugiat sed tempora."], ["level", 2], ["created_at", "2015-12-19 22:28:21.479081"], ["updated_at", "2015-12-19 22:28:21.479081"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "beatae"], ["details", "Sit aspernatur ea voluptatem exercitationem quaerat dolorem ipsum esse consequatur et eum delectus totam perferendis quibusdam iusto velit deserunt est provident iure in et non commodi quam fuga numquam ex voluptate sunt pariatur sit soluta repellendus quas nesciunt dolorum consequuntur voluptates hic nam libero dolore neque qui ut quis tenetur laborum unde voluptas voluptas qui voluptatum voluptatibus quis laudantium quia minima rerum vero minus inventore veritatis animi molestiae dolor non sequi ipsam officia illo ullam dolorem et amet doloremque autem excepturi architecto accusamus eos repellat consectetur est temporibus dolores cum nulla debitis beatae et alias nihil facilis magni et aliquam aut."], ["level", 0], ["created_at", "2015-12-19 22:28:21.480460"], ["updated_at", "2015-12-19 22:28:21.480460"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "voluptates"], ["details", "Et eos iusto exercitationem sed dolorem aut aut quaerat aut rem quod cum in saepe et delectus eos reprehenderit alias temporibus fugit laborum sit veniam officia animi nobis sunt repudiandae maxime nulla a ab quasi quia et et sit praesentium harum itaque reiciendis quisquam atque corrupti libero aut dolores non natus autem non molestiae ex aperiam possimus iure eveniet eligendi nostrum eius ducimus sunt in ipsam molestiae magni iste dolorem qui magnam nisi eum earum impedit et eaque non qui quis et accusamus perspiciatis est consequatur assumenda necessitatibus voluptatem omnis quia consectetur ipsa quos ut est minus quia dolorum blanditiis commodi officiis tenetur ea sint."], ["level", 1], ["created_at", "2015-12-19 22:28:21.482560"], ["updated_at", "2015-12-19 22:28:21.482560"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "itaque"], ["details", "Quia odit porro reiciendis deleniti rerum perspiciatis nulla aut culpa labore dolor incidunt quo harum ut eum ex hic explicabo eius et occaecati praesentium quae provident qui illum aperiam et suscipit ut cum quasi consequatur aut enim adipisci odio a natus tempore ut esse optio quibusdam dolores dolorem commodi facere quo repellat non aut nesciunt doloremque architecto rem nihil laboriosam atque iure minus aspernatur perferendis vitae libero est ipsa necessitatibus non sunt eum earum assumenda ea tenetur quos laudantium voluptatem sed voluptates omnis et modi velit ab delectus vel voluptas omnis quia molestiae sit ipsum ut ratione voluptate id est dolor molestiae debitis est autem."], ["level", 0], ["created_at", "2015-12-19 22:28:21.484525"], ["updated_at", "2015-12-19 22:28:21.484525"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "eum"], ["details", "Voluptatem fugit quo illo et animi iure beatae vitae magni cupiditate a amet est ea cumque doloremque praesentium eos deleniti enim voluptas ut ipsam officiis veniam explicabo occaecati iusto nostrum sit et quibusdam aut et ut quaerat ullam quisquam omnis saepe rerum quam consequatur dolores ex ducimus enim blanditiis error quia facere illum nihil minima placeat tempore vero dolorem et est laboriosam sint qui vel ad pariatur eius sunt qui labore incidunt et aliquam numquam optio nisi culpa est dolor ipsum omnis nam est iste atque voluptatum ut totam perferendis sunt aut inventore aperiam necessitatibus tenetur rerum esse accusamus voluptatibus rem et fugiat libero excepturi."], ["level", 1], ["created_at", "2015-12-19 22:28:21.485957"], ["updated_at", "2015-12-19 22:28:21.485957"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "est"], ["details", "Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt."], ["level", 0], ["created_at", "2015-12-19 22:28:21.487330"], ["updated_at", "2015-12-19 22:28:21.487330"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "nisi"], ["details", "Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio."], ["level", 1], ["created_at", "2015-12-19 22:28:21.488648"], ["updated_at", "2015-12-19 22:28:21.488648"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "skills" ("name", "details", "level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "voluptatem"], ["details", "Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus."], ["level", 1], ["created_at", "2015-12-19 22:28:21.489957"], ["updated_at", "2015-12-19 22:28:21.489957"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-12-19 15:28:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 300ms (Views: 298.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-29319dcc9502eb2d021219a72cbde7885342d523cb6a412d1373997fb7b67710.css?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/components/_all_skills.self-219d3539bc7b17e63389445660d2e5f9a022b32753fe7cb7cc01ed131df4843f.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/components/_body.self-230a77d5b12841a0220ec044c28efc2505fa5e44941408664b9858c835c489db.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/components/_header.self-29e18e432973593c6ea74095613ba57253d2f4e782a09d655448182569d59528.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/components/_main.self-832af200cb37449fc27445bed64adac24d3db586f05b7feb8bc2d23ba1406880.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/components/_new_skill.self-bf311b1d31fb4a7febe3cc17eef27f3982f0051c203a0f0b593bb9d8ce5514e1.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/components/_skill.self-8c35b3fa4b8a6b28f2b5ae18a438d760f788a2706ad16e3910d2d21d0bd37314.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2015-12-19 15:28:32 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"
+Completed 200 OK in 31ms (Views: 22.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-12-19 15:28:32 -0700
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:34 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:28:36 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.3ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:38 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:39 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:40 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:28:40 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:40 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:40 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.1ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:41 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:28:41 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:41 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:41 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:42 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:28:42 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:42 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:42 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:42 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:28:43 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:43 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:43 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.1ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:43 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:28:43 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:43 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:44 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:44 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:28:44 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:44 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:44 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:44 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:28:45 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.1ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:45 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:45 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:45 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:28:45 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:46 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:46 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:46 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:28:46 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:46 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:46 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:47 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:28:47 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:47 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:47 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:47 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:28:48 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:48 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:48 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:48 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:28:48 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:49 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:49 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:49 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/2" for ::1 at 2015-12-19 15:28:56 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"2", "name"=>"quod", "details"=>"Repellat corporis rerum est facilis at consequuntur perferendis est sapiente accusantium alias in suscipit doloribus sit aut numquam officia ea sed aut harum et qui quo repellendus iste nemo quia ut omnis quidem non fuga eius occaecati deleniti quasi autem natus quam cupiditate vitae libero sint exercitationem optio amet voluptatum qui et aliquid impedit non nulla sed dolor ipsam ad voluptatem dolorum est sequi voluptas quae dolores aut maxime magnam cumque quo excepturi ut commodi expedita cum veniam et magni voluptatem minus praesentium incidunt in earum nihil ut explicabo sint rerum qui temporibus perspiciatis ducimus distinctio doloremque id non delectus vel itaque.", "level"=>"2"}, "id"=>"2"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 2]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:57 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:58 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:28:58 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/2" for ::1 at 2015-12-19 15:28:59 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"2", "name"=>"quod", "details"=>"Repellat corporis rerum est facilis at consequuntur perferendis est sapiente accusantium alias in suscipit doloribus sit aut numquam officia ea sed aut harum et qui quo repellendus iste nemo quia ut omnis quidem non fuga eius occaecati deleniti quasi autem natus quam cupiditate vitae libero sint exercitationem optio amet voluptatum qui et aliquid impedit non nulla sed dolor ipsam ad voluptatem dolorum est sequi voluptas quae dolores aut maxime magnam cumque quo excepturi ut commodi expedita cum veniam et magni voluptatem minus praesentium incidunt in earum nihil ut explicabo sint rerum qui temporibus perspiciatis ducimus distinctio doloremque id non delectus vel itaque.", "level"=>"2"}, "id"=>"2"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 2]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:28:59 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:28:59 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:29:00 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/api/v1/skills/2" for ::1 at 2015-12-19 15:29:01 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"2", "name"=>"quod", "details"=>"Repellat corporis rerum est facilis at consequuntur perferendis est sapiente accusantium alias in suscipit doloribus sit aut numquam officia ea sed aut harum et qui quo repellendus iste nemo quia ut omnis quidem non fuga eius occaecati deleniti quasi autem natus quam cupiditate vitae libero sint exercitationem optio amet voluptatum qui et aliquid impedit non nulla sed dolor ipsam ad voluptatem dolorum est sequi voluptas quae dolores aut maxime magnam cumque quo excepturi ut commodi expedita cum veniam et magni voluptatem minus praesentium incidunt in earum nihil ut explicabo sint rerum qui temporibus perspiciatis ducimus distinctio doloremque id non delectus vel itaque.", "level"=>"2"}, "id"=>"2"}
+  [1m[35mSkill Load (0.1ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 2]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:29:02 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:29:02 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:29:05 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/api/v1/skills/2" for ::1 at 2015-12-19 15:29:06 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"2", "name"=>"quod", "details"=>"Repellat corporis rerum est facilis at consequuntur perferendis est sapiente accusantium alias in suscipit doloribus sit aut numquam officia ea sed aut harum et qui quo repellendus iste nemo quia ut omnis quidem non fuga eius occaecati deleniti quasi autem natus quam cupiditate vitae libero sint exercitationem optio amet voluptatum qui et aliquid impedit non nulla sed dolor ipsam ad voluptatem dolorum est sequi voluptas quae dolores aut maxime magnam cumque quo excepturi ut commodi expedita cum veniam et magni voluptatem minus praesentium incidunt in earum nihil ut explicabo sint rerum qui temporibus perspiciatis ducimus distinctio doloremque id non delectus vel itaque.", "level"=>"2"}, "id"=>"2"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 2]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:29:06 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:29:06 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.1ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:29:07 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-19 15:30:50 -0700
+Processing by SiteController#index as HTML
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"
+  [1m[36mSkill Load (0.6ms)[0m  [1mSELECT  "skills".* FROM "skills"  ORDER BY "skills"."id" ASC LIMIT 1[0m
+  Rendered site/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 60439ms (Views: 120.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.self-29319dcc9502eb2d021219a72cbde7885342d523cb6a412d1373997fb7b67710.css?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-19 15:31:50 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components/_all_skills.self-219d3539bc7b17e63389445660d2e5f9a022b32753fe7cb7cc01ed131df4843f.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components/_body.self-230a77d5b12841a0220ec044c28efc2505fa5e44941408664b9858c835c489db.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components/_header.self-29e18e432973593c6ea74095613ba57253d2f4e782a09d655448182569d59528.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components/_main.self-832af200cb37449fc27445bed64adac24d3db586f05b7feb8bc2d23ba1406880.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components/_new_skill.self-bf311b1d31fb4a7febe3cc17eef27f3982f0051c203a0f0b593bb9d8ce5514e1.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components/_skill.self-8c35b3fa4b8a6b28f2b5ae18a438d760f788a2706ad16e3910d2d21d0bd37314.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components/_all_skills.self-219d3539bc7b17e63389445660d2e5f9a022b32753fe7cb7cc01ed131df4843f.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components/_body.self-230a77d5b12841a0220ec044c28efc2505fa5e44941408664b9858c835c489db.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components/_header.self-29e18e432973593c6ea74095613ba57253d2f4e782a09d655448182569d59528.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components/_main.self-832af200cb37449fc27445bed64adac24d3db586f05b7feb8bc2d23ba1406880.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components/_new_skill.self-bf311b1d31fb4a7febe3cc17eef27f3982f0051c203a0f0b593bb9d8ce5514e1.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components/_skill.self-8c35b3fa4b8a6b28f2b5ae18a438d760f788a2706ad16e3910d2d21d0bd37314.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2015-12-19 15:31:51 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[36mSkill Load (1.5ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+Completed 200 OK in 23ms (Views: 18.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-12-19 15:31:51 -0700
+
+
+Started GET "/" for ::1 at 2015-12-19 15:31:56 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 114ms (Views: 112.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-29319dcc9502eb2d021219a72cbde7885342d523cb6a412d1373997fb7b67710.css?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components/_all_skills.self-219d3539bc7b17e63389445660d2e5f9a022b32753fe7cb7cc01ed131df4843f.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components/_body.self-230a77d5b12841a0220ec044c28efc2505fa5e44941408664b9858c835c489db.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components/_header.self-29e18e432973593c6ea74095613ba57253d2f4e782a09d655448182569d59528.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components/_main.self-832af200cb37449fc27445bed64adac24d3db586f05b7feb8bc2d23ba1406880.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components/_new_skill.self-bf311b1d31fb4a7febe3cc17eef27f3982f0051c203a0f0b593bb9d8ce5514e1.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components/_skill.self-8c35b3fa4b8a6b28f2b5ae18a438d760f788a2706ad16e3910d2d21d0bd37314.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/development/react.self-7b6d4d9bb038202df4841a80039cfea3df922576794ef968c155bf58c702c25a.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components/_all_skills.self-219d3539bc7b17e63389445660d2e5f9a022b32753fe7cb7cc01ed131df4843f.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components/_body.self-230a77d5b12841a0220ec044c28efc2505fa5e44941408664b9858c835c489db.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components/_header.self-29e18e432973593c6ea74095613ba57253d2f4e782a09d655448182569d59528.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components/_main.self-832af200cb37449fc27445bed64adac24d3db586f05b7feb8bc2d23ba1406880.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components/_new_skill.self-bf311b1d31fb4a7febe3cc17eef27f3982f0051c203a0f0b593bb9d8ce5514e1.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components/_skill.self-8c35b3fa4b8a6b28f2b5ae18a438d760f788a2706ad16e3910d2d21d0bd37314.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2015-12-19 15:31:57 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-12-19 15:31:57 -0700
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:32:00 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:32:01 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:32:02 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:32:03 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.1ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:32:03 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:32:03 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.1ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:32:03 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:32:03 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:32:04 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:32:04 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:32:04 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:32:04 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:32:04 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:32:05 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.1ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:32:05 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:32:05 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/1" for ::1 at 2015-12-19 15:32:05 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"1", "name"=>"aut", "details"=>"Voluptas nisi officia tempore et suscipit itaque dolor modi ullam consequatur ab inventore deleniti cumque non aut quos voluptatem consequatur aspernatur aut dolores quidem quia neque in ut et ut magnam velit illo quo aut omnis eum voluptates dignissimos tempora dolor dicta nulla totam ut qui dolorum ducimus tenetur sed aut rerum et quo dolore explicabo sit nihil molestias dolorem magni temporibus vel accusamus labore sed alias excepturi aliquid asperiores reiciendis numquam sunt illum praesentium voluptatem nostrum quaerat est rerum pariatur ut iure expedita eos ipsam iusto laudantium necessitatibus eligendi esse autem corrupti ipsum quia voluptatibus sequi laboriosam rerum impedit sint consequatur saepe qui.", "level"=>"0"}, "id"=>"1"}
+  [1m[36mSkill Load (0.1ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/api/v1/skills/48" for ::1 at 2015-12-19 15:32:05 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"48", "name"=>"est", "details"=>"Inventore est repellendus molestiae et est ullam et nihil veniam ut occaecati rerum autem sed saepe voluptatem esse magni eum et repellat consequatur nihil et qui similique consequatur possimus tempore omnis dolorum aut ab voluptas eveniet velit id eaque sequi ad aut est suscipit et at illo non itaque quam eum odio ea perspiciatis provident vel a labore et ipsam vel aut sint eligendi cupiditate pariatur asperiores et dolor sunt quia delectus corporis placeat dolor nam numquam nisi impedit aut expedita non qui enim neque ut odit et omnis dolore dolorem quisquam qui ea nobis corrupti perferendis exercitationem autem voluptatem minima aliquid deleniti deserunt.", "level"=>"0"}, "id"=>"48"}
+  [1m[35mSkill Load (0.2ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 48]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/api/v1/skills/49" for ::1 at 2015-12-19 15:32:05 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"49", "name"=>"nisi", "details"=>"Ad rem consequatur ea et voluptatibus ea dolor deleniti qui aliquam autem laudantium cupiditate quaerat consequatur consectetur reprehenderit provident enim sunt suscipit eum qui sequi quidem velit repellat eaque eligendi a iste amet enim officia soluta non id mollitia vel fugiat odio praesentium dolor sed sed adipisci quisquam vel saepe odit asperiores temporibus voluptas numquam nam eum officiis tempore doloremque dolorem qui molestiae qui facilis id non ut quod sint dolorum quia aut nesciunt architecto in error omnis aut et debitis laborum ut itaque dicta quas nisi omnis ex corporis necessitatibus est impedit velit ipsum ipsam vitae sint esse sunt fuga perspiciatis aspernatur in optio.", "level"=>"1"}, "id"=>"49"}
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 49]]
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/api/v1/skills/50" for ::1 at 2015-12-19 15:32:06 -0700
+Processing by Api::V1::SkillsController#update as */*
+  Parameters: {"skill"=>{"id"=>"50", "name"=>"voluptatem", "details"=>"Aperiam error voluptas eum quam consequatur est placeat perspiciatis id nostrum maiores veniam nihil et optio debitis expedita est ipsa porro corrupti qui in iure magni veritatis cupiditate voluptas delectus nesciunt sit odio occaecati rerum atque repellendus quos qui suscipit et ducimus et sit minus ut et cumque dolor et voluptas omnis deserunt ratione qui saepe sint aut quia eos fuga eveniet impedit quo et fugiat quod sapiente sed dolore repudiandae mollitia dicta nisi sequi est totam qui laborum aut voluptatem omnis modi dolor officiis fugit vero eum facere consequuntur autem quae et at unde et quisquam dolores quia non sint neque autem natus.", "level"=>"1"}, "id"=>"50"}
+  [1m[35mSkill Load (0.1ms)[0m  SELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1  [["id", 50]]
+Unpermitted parameter: id
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)

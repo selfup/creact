@@ -44,9 +44,9 @@ const Skill = React.createClass({
     let id       = this.props.skill.id;
     let name     = this.props.skill.name;
     let details  = this.props.skill.details;
-
     let levels   = ['bad', 'halfbad', 'fantastic'];
     let change   = action === 'up' ? 1 : - 1;
+    console.log(this.props.skill.level);
     let newLevel = action ? levels[index + change] : this.props.skill.level;
 
     return {id: id, name: name, details: details, level: newLevel}
@@ -57,10 +57,12 @@ const Skill = React.createClass({
     let change   = action === 'up' ? 1 : - 1;
 
     return action ? levels[index + change] : this.props.skill.level;
+    console.log(this.props.skill.level);
   },
 
   onUpdateLevel(action) {
     if (this.canChangeLevel(action)) {
+      console.log(this.props.skill.level);
       let level = this.getNewLevel(action)
       let skill = {id: this.props.skill.id, level: level }
 
@@ -89,8 +91,7 @@ const Skill = React.createClass({
                   onClick={this.handleLevelChange.bind(this, 'down')}>
             <span className="glyphicon glyphicon-triangle-bottom"></span>
           </button>
-
-          <p><strong>Level:</strong> {this.props.skill.level}</p>
+          <p><strong>Level: {this.props.skill.level} </strong></p>
 
           <button type="button"
                   className="btn btn-default btn-sm"
