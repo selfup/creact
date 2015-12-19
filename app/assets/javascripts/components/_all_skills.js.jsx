@@ -4,7 +4,7 @@ var AllSkills = React.createClass({
   },
 
   handleEdit() {
-    console.log('you are in edit!');
+    this.props.handleEdit(id)
   },
 
   onUpdate(skill) {

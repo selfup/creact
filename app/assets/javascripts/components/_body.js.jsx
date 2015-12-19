@@ -32,6 +32,7 @@ var Body = React.createClass({
   },
 
   handleUpdate(skill) {
+    console.log(skill);
     $.ajax({
       url: `/api/v1/skills/${skill.id}`,
       type: 'PUT',

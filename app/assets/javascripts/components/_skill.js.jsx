@@ -26,29 +26,6 @@ const Skill = React.createClass({
     this.setState({ editable: !this.state.editable })
   },
 
-  // handleLevelChange(action) {
-  //   let levels  = ['bad', 'halfbad', 'fantastic'];
-  //   let name    = this.props.skill.name;
-  //   let details = this.props.skill.details;
-  //   let level   = this.props.skill.level;
-  //   let index   = levels.indexOf(level);
-  //
-  //   if (action === 'up' && index < 2) {
-  //     let newLevel = levels[index + 1];
-  //     this.props.handleUpdate({id: this.props.skill.id, name: name, details: details, level: newLevel})
-  //   } else if (action === 'down' && index > 0) {
-  //     let newLevel = levels[index - 1];
-  //     this.props.handleUpdate({id: this.props.skill.id, name: name, details: details, level: newLevel})
-  //   }
-  // },
-
-  handleLevelChange(action) {
-    if (this.levelCanBeChanged(action)) {
-      let skill = this.updatedSkill()
-      this.props.handleUpdate(skill);
-    }
-  },
-
   handleLevelChange(action) {
     let levels  = ['bad', 'halfbad', 'fantastic'];
     let level   = levels.indexOf(this.props.skill.level);
@@ -128,7 +105,7 @@ const Skill = React.createClass({
           Delete
         </button>
 
-        <button onClick={this.handleEdit}>{this.state.editable ? 'Submit' : 'Edit' }</button>
+        <button onClick={this.onUpdate}>{this.state.editable ? 'Submit' : 'Edit' }</button>
       </div>
     )
   }
