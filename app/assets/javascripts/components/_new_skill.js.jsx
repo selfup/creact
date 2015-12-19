@@ -7,11 +7,11 @@ var NewSkill = React.createClass({
        url: '/api/v1/skills',
        type: 'POST',
        data: { skill: { name: name, details: details } },
-       success: (response) => {
-         console.log('it worked!', response);
+       success: (skill) => {
+         this.props.handleSubmit(skill)
        }
      })
-     
+
     console.log(name, details)
   },
 

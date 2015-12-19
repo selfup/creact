@@ -8,6 +8,11 @@ var Body = React.createClass({
     console.log('Component Did Mount!')
   },
 
+  handleSubmit(skill) {
+    let newState = this.state.skills.concat(skill);
+    this.setState({ skills: newState })
+  },
+
   render() {
     return (
       <div>
